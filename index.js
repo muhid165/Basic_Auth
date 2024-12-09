@@ -7,8 +7,10 @@ const port = 8080;
 app.use(authMiddleware);                 // basic authentication is implemented in this middleware 
 
 app.get("/",async(req,res) => {
+    console.log("you are now logged In");
     
-    res.send("Authentication successfull !!!")
+    res.send("Authentication successfull !!!");
+
 })
 
 app.listen(port,() => {
